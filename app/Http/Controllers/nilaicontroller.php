@@ -18,7 +18,7 @@ class nilaicontroller extends Controller
     }
 
     public function grade($a){
-        if ($a < 100 && $a >= 90){
+        if ($a < 101 && $a >= 90){
             $b = 'A';
         }
         elseif ($a < 90 && $a >= 80) {

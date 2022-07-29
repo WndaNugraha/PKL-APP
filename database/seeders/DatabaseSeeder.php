@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call([
             PostTableSeeder::class,
-            siswaseed::class,
             nilaiseed::class,
             jurusanseed::class,
         ]);

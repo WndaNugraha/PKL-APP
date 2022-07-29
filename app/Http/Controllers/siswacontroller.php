@@ -2,26 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\siswa;
+use Illuminate\Http\Request;
 
-class siswacontroller extends Controller
+class SiswaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
-        //
-        $a = siswa::all();
-        return view('siswa.index',['siswa'=>$a]);
+        //menampilkan semua data dari model Siswa
+        $siswa = siswa::all();
+        return view('siswa.index', ['siswa'=>$siswa]);
     }
 
     /**
@@ -32,7 +31,6 @@ class siswacontroller extends Controller
     public function create()
     {
         //
-
         return view('siswa.create');
     }
 
@@ -44,21 +42,26 @@ class siswacontroller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validasi
         $validated = $request->validate([
-            'nis' => 'required|:post|max:255',
             'nama' => 'required',
+            'nis' => 'required|unique:siswas|max:255',
+            'jenis_kelamin' => 'required',
+            'agama' => 'required',
+            'tgl_lahir' => 'required',
             'alamat' => 'required',
-            'tanggal' => 'required',
         ]);
 
-        $post = new siswa();
-        $post -> nis = $request->nis;
-        $post ->nama = $request->nama;
-        $post ->alamat = $request->alamat;
-        $post ->tanggal = $request->tanggal;
-        $post->save();
-        return redirect()->route('siswa.index')->with('succes','Data Berhasil Dibuat!');
+        $siswa = new siswa();
+        $siswa->nama = $request->nama;
+        $siswa->nis = $request->nis;
+        $siswa->jenis_kelamin = $request->jenis_kelamin;
+        $siswa->agama = $request->agama;
+        $siswa->tgl_lahir = $request->tgl_lahir;
+        $siswa->alamat = $request->alamat;
+        $siswa->save();
+        return redirect()->route('siswa.index')
+            ->with('success', 'Data berhasil dibuat!');
     }
 
     /**
@@ -69,9 +72,8 @@ class siswacontroller extends Controller
      */
     public function show($id)
     {
-        //
-        $post = siswa::findOrFail($id);
-        return view('siswa.show',compact('post'));
+        $siswa = siswa::findOrFail($id);
+        return view('siswa.show', compact('siswa'));
     }
 
     /**
@@ -82,9 +84,9 @@ class siswacontroller extends Controller
      */
     public function edit($id)
     {
-        //
-        $post = siswa::findOrFail($id);
-        return view('siswa.edit',compact('post'));
+        $siswa = siswa::findOrFail($id);
+        return view('siswa.edit', compact('siswa'));
+
     }
 
     /**
@@ -96,21 +98,26 @@ class siswacontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Validasi
         $validated = $request->validate([
-            'nis' => 'required|:post|max:255',
             'nama' => 'required',
+            'nis' => 'required|max:255',
+            'jenis_kelamin' => 'required',
+            'agama' => 'required',
+            'tgl_lahir' => 'required',
             'alamat' => 'required',
-            'tanggal' => 'required',
         ]);
 
-        $post = siswa::findOrFail($id);
-        $post -> nis = $request->nis;
-        $post ->nama = $request->nama;
-        $post ->alamat = $request->alamat;
-        $post ->tanggal = $request->tanggal;
-        $post->save();
-        return redirect()->route('siswa.index')->with('succes','Data Berhasil Di Edit!');
+        $siswa = siswa::findOrFail($id);
+        $siswa->nama = $request->nama;
+        $siswa->nis = $request->nis;
+        $siswa->jenis_kelamin = $request->jenis_kelamin;
+        $siswa->agama = $request->agama;
+        $siswa->tgl_lahir = $request->tgl_lahir;
+        $siswa->alamat = $request->alamat;
+        $siswa->save();
+        return redirect()->route('siswa.index')
+            ->with('success', 'Data berhasil diedit!');
     }
 
     /**
@@ -121,9 +128,9 @@ class siswacontroller extends Controller
      */
     public function destroy($id)
     {
-        //
-        $post = siswa::findOrFail($id);
-        $post->delete();
-        return redirect()->route('siswa.index')->with('succes','Data Berhasil Di Hapus!');
+        $siswa = siswa::findOrFail($id);
+        $siswa->delete();
+        return redirect()->route('siswa.index')
+            ->with('success', 'Data berhasil dihapus!');
     }
 }

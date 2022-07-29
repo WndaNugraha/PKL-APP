@@ -5,6 +5,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\siswacontroller;
 use App\Http\Controllers\nilaicontroller;
 use App\Http\Controllers\jurusancontroller;
+use App\Http\Controllers\walicontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,28 @@ Route::resource('post',PostController::class);
 
 Route::resource('siswa',siswacontroller::class);
 
+Route::resource('wali', waliController::class);
+
 Route::resource('nilai',nilaicontroller::class);
 
 Route::resource('jurusan',jurusancontroller::class);
+
+Route::get('/test-admin',function(){
+
+    return view('layouts.admin');
+});
+
+Route::get('/hallo',function(){
+
+    return view('hallo');
+});
+
+Route::get('/home2',function(){
+
+    return view('TampilanUser.home');
+});
+
+Route::get('/zakat',function(){
+
+    return view('TampilanUser.zakat');
+});
