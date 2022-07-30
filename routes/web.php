@@ -48,10 +48,37 @@ Route::get('/hallo',function(){
 
 Route::get('/home2',function(){
 
-    return view('TampilanUser.home');
+    return view('TampilanUser.home',[
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/zakat',function(){
 
-    return view('TampilanUser.zakat');
+    return view('TampilanUser.zakat',[
+        "title" => "Zakat"
+    ]);
 });
+
+Route::get('/sedekah',function(){
+
+    return view('TampilanUser.sedekah',[
+        "title" => "Sedekah"
+    ]);
+});
+
+Route::get('/infaq',function(){
+
+    return view('TampilanUser.infaq',[
+        "title" => "Infaq"
+    ]);
+});
+
+Route::get('/donasi',function(){
+
+    return view('TampilanUser.donasi',[
+        "title" => "Donasi"
+    ]);
+
+});
+

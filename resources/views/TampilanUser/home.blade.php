@@ -1,137 +1,175 @@
-@extends('layouts.user')
+@extends('layouts.user2')
 
 @section('content')
-
-<section id="hero" class="d-flex align-items-center">
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-      <h1>Ruang ZIS</h1>
-      <h2 class="text-white">(Zakat,Infaq,Sedekah)</h2>
-      <h2>Berimanlah kamu kepada Allah dan Rasul-Nya dan nafkahkanlah sebagian dari hartamu yang Allah telah menjadikan kamu menguasainya. Maka orang-orang yang beriman di antara kamu dan menafkahkan (sebagian) dari hartanya memperoleh pahala yang besar. (QS. Al Hadid ayat 7)</h2>
-    </div>
-    <div class="col-lg-6 order-1 order-lg-2 hero-img " data-aos="zoom-in" data-aos-delay="400">
-      <img src="assets/img/donasi.png" class="img-fluid animated" alt="" class="ml-1" style="width: 500px;">
-    </div>
-  </div>
-</div>
-
-</section><!-- End Hero -->
-<section id="cliens" class="cliens section-bg">
-  <div class="container">
-
-    <div class="row" data-aos="zoom-in">
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/dana.png"   alt="" >
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/bca.png" class="img-fluid" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/mandiri.png" class="img-fluid" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/gopay.png" class="img-fluid" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/bni.png" class="img-fluid" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="assets/img/clients/bjb.png" class="img-fluid" alt="">
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-    <section>
-        <div class="container">
-          <h3>Ini judul</h3>
-          <br>
-              <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione iste
-                 iusto dolores repellat ipsa rerum magnam voluptates error libero ipsam aspernatur
-                  obcaecati non impedit consectetur, illo eligendi nostrum consequatur!</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores,
-              nemo labore rem eveniet accusamus quod iure unde blanditiis consequatur hic,
-              aperiam molestias ex expedita! Autem voluptas placeat iusto eius, odit, quis voluptates
-               eaque at esse quia saepe. Quaerat esse exercitationem reprehenderit perferendis dolorem 
-               numquam aliquam sint impedit, rerum neque ipsa repellat molestiae facilis laboriosam. 
-               Dolorum facilis similique quaerat minus quos sunt sit animi eius exercitationem itaque,
-                minima odit reprehenderit velit quidem nobis soluta? Dicta repellendus repellat architecto,
-                 mollitia possimus quod libero cum sapiente inventore vel voluptatum velit voluptatem earum est 
-                 nesciunt quos facilis explicabo quam nihil laborum pariatur. Ad.</h5> 
-        </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="card shadow  rounded">
-        <div class="card-body">
-        <h4>Penyaluran ZIS (Zakat,Infaq,Sedekah)</h4>
-        <br>
-            <div class="row">
-
-              <div class="col-4">
-                <div class="card">
-                    <img src="/assets/img/zakat.png" alt="" style="width:343px; height:200px;">
-                    <div class="card-body">
-                      <h5>zakat</h5>
-                      <p>penyaluran zakat ini diberikan kepada beberapa daerah di bandung</p>
-                  </div>
+    <div class="container-xxl position-relative p-0">
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">Ruang ZIS</h1>
+                            <h4 class="text-white mb-4 animated zoomIn">(Zakat,Infaq,Sedekah)</h4>
+                            <p class="text-white pb-3 animated zoomIn">Berimanlah kamu kepada Allah dan Rasul-Nya dan nafkahkanlah sebagian dari hartamu yang Allah telah menjadikan kamu menguasainya. Maka orang-orang yang beriman di antara kamu dan menafkahkan (sebagian) dari hartanya memperoleh pahala yang besar. (QS. Al Hadid ayat 7)</p>
+                          </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid" src="aset/img/donasi3.png" alt="">
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="col-4">
-                <div class="card">
-                    <img src="/assets/img/infaq.jpg" alt="" style="width:343px; height:200px;">
-                    <div class="card-body">
-                      <h5>infaq</h5>
-                      <p>penyaluran infaq ini diberikan kepada beberapa daerah di bandung</p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-4">
-                <div class="card">
-                    <img src="/assets/img/sedeqah.jpeg" alt="" style="width:343px; height:200px;">
-                    <div class="card-body">
-                      <h5>sedeqah</h5>
-                      <p>penyaluran sedeqah ini diberikan kepada beberapa daerah di bandung</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+        <!-- Navbar & Hero End -->
 
-    <section>
-        <div class="container">
-          <h3>Ini judul</h3>
-          <br>
-              <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione iste
-                 iusto dolores repellat ipsa rerum magnam voluptates error libero ipsam aspernatur
-                  obcaecati non impedit consectetur, illo eligendi nostrum consequatur!</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores,
-              nemo labore rem eveniet accusamus quod iure unde blanditiis consequatur hic,
-              aperiam molestias ex expedita! Autem voluptas placeat iusto eius, odit, quis voluptates
-               eaque at esse quia saepe. Quaerat esse exercitationem reprehenderit perferendis dolorem 
-               numquam aliquam sint impedit, rerum neque ipsa repellat molestiae facilis laboriosam. 
-               Dolorum facilis similique quaerat minus quos sunt sit animi eius exercitationem itaque,
-                minima odit reprehenderit velit quidem nobis soluta? Dicta repellendus repellat architecto,
-                 mollitia possimus quod libero cum sapiente inventore vel voluptatum velit voluptatem earum est 
-                 nesciunt quos facilis explicabo quam nihil laborum pariatur. Ad.</h5> 
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- Full Screen Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">Ruang ZIS</h6>
+                            <h2 class="mt-2">Solusi untuk anda yang tidak mau ribet untuk menyalurkan ZIS</h2>
+                        </div>
+                        <p class="mb-4">Web ini menyediakan fitur donasi zakat,infaq dan sedekah untuk anda yang tidak mau ribet untuk memberikan zakat, infaq dan sedekah. <br> 
+                        Web ini bertujuan untuk menyalurkan donasi anda kepada orang-orang yang tepat unutuk menerimanya.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="aset/img/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Newsletter Start -->
+        <!-- Newsletter End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Penyaluran</h6>
+                    <h2 class="mt-2">Penyaluran Zakat, Infaq, Sedekah.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                               <img src="aset/img/zakat.png" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
+                            </div>
+                            <h5 class="mb-3 ">Penyaluran Zakat</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                            <img src="aset/img/sedeqah.jpeg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
+                            </div>
+                            <h5 class="mb-3">Penyaluran sedekah</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                            <img src="aset/img/infaq.jpg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
+                            </div>
+                            <h5 class="mb-3">Penyaluran Infaq</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Portfolio Start -->
+       
+        <!-- Portfolio End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4" style="height: 330px;">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p> "Terkadang kita sebagai manusia lupa akan kewajibannya untuk berbagi kepada sesama. Padahal, berbagi apapun akan mendekatkan jiwa kita kepada Tuhan dan sesama manusia."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                                <h6 class="text-white mb-1">name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4" style="height: 330px;">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p>"Berbagi bukan melulu soal harta pribadi. Kebahagiaan, tawa, dan waktu adalah hal-hal sederhana yang dapat kita bagi dengan orang lain."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                                <h6 class="text-white mb-1">Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4" style="height: 330px;">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p> "Tak akan pernah ada sejarah menuliskan seorang manusia menyesal untuk berbagi. Setiap manusia justru akan merasakan nikmat dunia yang sesungguhnya setelah berbagi."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                                <h6 class="text-white mb-1">name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4" style="height: 330px;">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p>"Berbagi kesuksesan diri sendiri bukan berarti sombong, tapi agar memacu dan menginspirasi orang lain."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                                <h6 class="text-white mb-1">Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+
+            <h2>judul..</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
+          <br>
+          <h2>judul..</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
+          
+        </div>
+
 @endsection

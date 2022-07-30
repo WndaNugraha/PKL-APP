@@ -6,10 +6,10 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Zakat</h1>
+                            <h1 class="text-white animated zoomIn">Infaq</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
+                            <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/zakat">zakat</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/infaq">Infaq</a></li>

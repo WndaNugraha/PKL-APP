@@ -6,17 +6,16 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Zakat</h1>
+                            <h1 class="text-white animated zoomIn">Sedekah</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
+                            <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/zakat">zakat</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/infaq">Infaq</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/donasi">Donasi</a></li>
                                 </ol>
                                 <a href="/donasi" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
-
                             </nav>
                         </div>
                     </div>
@@ -50,6 +49,8 @@
                     </div>
                 </div>
                 <br>
+                <br>
+                <hr class="wow zoomIn" data-wow-delay="0.5s">
                 <br>
                 <br>
 
